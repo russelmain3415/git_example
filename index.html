@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio — developer, designer, and builder.">
+  <meta name="theme-color" content="#080a0f">
+  <title>Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header id="header">
+    <nav>
+      <a class="logo" href="#">YN<span>.</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="badge"><span class="badge-dot"></span> Open to opportunities</span>
+          <h1>
+            <span class="gradient-text">Your Name</span>
+            <span class="role">I build <em id="typed"></em></span>
+          </h1>
+          <p class="hero-desc">
+            Full-stack developer crafting fast, accessible products—from idea to
+            launch. I care about clean architecture, sharp UX, and code that lasts.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">
+              See projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">Let's talk</a>
+          </div>
+        </div>
+        <aside class="terminal reveal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            <span class="terminal-title">portfolio.ts</span>
+          </div>
+          <pre class="terminal-body"><code><span class="kw">const</span> dev = {
+  <span class="fn">name</span>: <span class="str">"Your Name"</span>,
+  <span class="fn">role</span>: <span class="str">"Developer"</span>,
+  <span class="fn">skills</span>: [<span class="str">"TS"</span>, <span class="str">"React"</span>, <span class="str">"Node"</span>],
+  <span class="fn">available</span>: <span class="ok">true</span>
+};
+
+<span class="cm">// Ready when you are.</span>
+<span class="fn">dev</span>.<span class="fn">connect</span>(); <span class="ok">→</span></code></pre>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="wrap">
+      <div class="section-head reveal">
+        <h2>01 — About</h2>
+        <h3>Building on the web, with intent</h3>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>
+            I'm a developer who loves turning complex problems into simple, elegant
+            interfaces. From prototypes to production apps, I focus on performance,
+            accessibility, and maintainable codebases.
+          </p>
+          <p>
+            I collaborate closely with designers and stakeholders, ship iteratively,
+            and keep learning—whether that's a new framework or a better way to
+            structure a team workflow.
+          </p>
+          <div class="highlights">
+            <div class="highlight">
+              <span class="highlight-icon">⚡</span>
+              <div>
+                <strong>Performance-first</strong>
+                <span>Lighthouse-minded builds and lean bundles.</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">♿</span>
+              <div>
+                <strong>Accessible by default</strong>
+                <span>Semantic HTML, keyboard nav, and WCAG awareness.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><strong>3+</strong><span>Years building</span></div>
+          <div class="stat"><strong>12</strong><span>Projects delivered</span></div>
+          <div class="stat"><strong>100%</strong><span>Commitment to craft</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap">
+      <div class="section-head reveal">
+        <h2>02 — Skills</h2>
+        <h3>Tools I reach for daily</h3>
+      </div>
+      <div class="skill-groups reveal">
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="skills">
+            <span class="skill">HTML &amp; CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">TypeScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <div class="skills">
+            <span class="skill">Node.js</span>
+            <span class="skill">Express</span>
+            <span class="skill">REST</span>
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">Python</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Other</h4>
+          <div class="skills">
+            <span class="skill">Git</span>
+            <span class="skill">Figma</span>
+            <span class="skill">Docker</span>
+            <span class="skill">CI/CD</span>
+            <span class="skill">Testing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap">
+      <div class="section-head reveal">
+        <h2>03 — Experience</h2>
+        <h3>Where I've grown</h3>
+      </div>
+      <div class="timeline reveal">
+        <article class="timeline-item">
+          <span class="timeline-date">2024 — Now</span>
+          <div>
+            <h4>Software Developer</h4>
+            <p class="org">Company / Freelance</p>
+            <p>Shipped client-facing apps, improved Core Web Vitals, and led small feature teams from spec to deploy.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-date">2022 — 2024</span>
+          <div>
+            <h4>Junior Developer</h4>
+            <p class="org">Startup / Agency</p>
+            <p>Built dashboards, integrated APIs, and maintained design systems across multiple product surfaces.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-date">2021 — 2022</span>
+          <div>
+            <h4>Self-taught &amp; projects</h4>
+            <p class="org">Personal</p>
+            <p>Launched portfolio sites, open-source contributions, and hackathon prototypes that became learning labs.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap">
+      <div class="section-head reveal">
+        <h2>04 — Projects</h2>
+        <h3>Work I'm proud of</h3>
+      </div>
+      <div class="projects">
+        <article class="card reveal">
+          <div class="card-visual"><span class="card-num">01</span></div>
+          <div class="card-body">
+            <h4>Atlas Dashboard</h4>
+            <div class="card-tags"><span>React</span><span>D3</span><span>API</span></div>
+            <p>Real-time analytics dashboard with filters, exports, and role-based views for a growing team.</p>
+            <a class="card-link" href="#" target="_blank" rel="noopener">View live →</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-visual"><span class="card-num">02</span></div>
+          <div class="card-body">
+            <h4>Pulse Tasks</h4>
+            <div class="card-tags"><span>Node</span><span>PostgreSQL</span><span>WebSockets</span></div>
+            <p>Collaborative task app with auth, live updates, and a minimal UI built for daily use.</p>
+            <a class="card-link" href="#" target="_blank" rel="noopener">View live →</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-visual"><span class="card-num">03</span></div>
+          <div class="card-body">
+            <h4>Lumen Landing</h4>
+            <div class="card-tags"><span>HTML</span><span>CSS</span><span>Performance</span></div>
+            <p>Marketing site scoring 98+ on Lighthouse—animated, accessible, and deployed as a single static bundle.</p>
+            <a class="card-link" href="#" target="_blank" rel="noopener">View live →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <div class="section-head reveal">
+        <h2>05 — Contact</h2>
+        <h3>Start a conversation</h3>
+      </div>
+      <div class="contact-layout reveal">
+        <div class="contact-box">
+          <p>Freelance, full-time, or a quick coffee chat—I'm happy to hear about your project and how I can help.</p>
+          <div class="email-row">
+            <span class="email-display" id="email">you@example.com</span>
+            <button type="button" class="copy-btn" id="copy-btn" data-email="you@example.com">Copy</button>
+          </div>
+          <a class="btn btn-primary" href="mailto:you@example.com">Send email</a>
+        </div>
+        <div class="social-grid">
+          <a class="social-card" href="https://github.com" target="_blank" rel="noopener">
+            <strong>GitHub</strong>
+            <span>Code &amp; contributions</span>
+          </a>
+          <a class="social-card" href="https://linkedin.com" target="_blank" rel="noopener">
+            <strong>LinkedIn</strong>
+            <span>Professional network</span>
+          </a>
+          <a class="social-card" href="https://twitter.com" target="_blank" rel="noopener">
+            <strong>Twitter / X</strong>
+            <span>Thoughts &amp; updates</span>
+          </a>
+          <a class="social-card" href="#" download>
+            <strong>Resume</strong>
+            <span>PDF download</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>© <span id="year"></span> Your Name</p>
+    <a class="back-top" href="#">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
